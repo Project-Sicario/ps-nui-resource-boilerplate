@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { debugData, useNuiEvent, fetchNui } from '../nui';
+import { useNuiEvent, fetchNui } from '../nui';
 import './style.scss';
 
 const SpawnDialog: React.FC = () => {
@@ -12,7 +12,7 @@ const SpawnDialog: React.FC = () => {
   var [previousLocation, setPreviousLocation] = useState(null);
 
   useNuiEvent<any>('nui-spawndialog', data => {
-    if (data.toggle == true) {
+    if (data.toggle === true) {
       if (previousLocation != null) {
         var prevElement = document.getElementById(previousLocation);
         prevElement?.classList.remove('selected');

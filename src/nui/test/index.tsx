@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { debugData, useNuiEvent, fetchNui } from '../nui';
+import { useNuiEvent } from '../nui';
 import './style.scss';
 
 const Test: React.FC = () => {
