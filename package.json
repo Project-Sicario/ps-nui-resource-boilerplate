@@ -1,0 +1,68 @@
+{
+  "name": "ps-nui-resource-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "build",
+  "scripts": {
+    "build-scripts": "webpack --mode production",
+    "watch-scripts": "webpack --mode development --watch true",
+    "build-nui": "craco build && rm build/static/js/*.map && rm build/static/css/*.map",
+    "watch-nui": "craco start",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint": "eslint . --ext .js,.ts,.tsx"
+  },
+  "author": "Rory Pearson",
+  "license": "ISC",
+  "devDependencies": {
+    "@emotion/react": "^11.9.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.1",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.2",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.51.0",
+    "typescript": "^4.6.4",
+    "ts-loader": "^8.0.2",
+    "craco": "^0.0.3",
+    "remove-files-webpack-plugin": "^1.4.3",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "@citizenfx/client": "^1.0.2792-1",
+    "@citizenfx/server": "^1.0.2792-1",
+    "@types/node": "^16.6.2",
+    "cross-env": "^7.0.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

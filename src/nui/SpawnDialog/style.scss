@@ -1,0 +1,49 @@
+.spawndialog {
+  background: rgb(32, 37, 42); 
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 2px;
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  right: 0;
+  .spawns {
+    width: 90%;
+    margin: auto;
+    padding: 10px 10px;
+    h1 {
+      color: rgb(220, 220, 220);
+      text-align: center;
+      margin: 10px 10px;
+    }
+    .buttons {
+      width: 90%;
+      margin: auto;
+      padding: 10px 10px;
+    }
+    #submit {
+      background-color: #23ACFF;
+      color: white;
+    }
+    #submit:hover{
+      background-color: #1f8acc;
+      color: rgb(220, 220, 220);
+    }
+    .selected {
+      background: #23ACFF;
+      color: white;
+    }
+    .selected:hover {
+      background: #23ACFF;
+    }
+  }
+
+  button {
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+  }
+}
