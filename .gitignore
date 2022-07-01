@@ -1,5 +1,4 @@
-node_modules/
-dist/
 build/
-scripts/
-.idea/
+dist/
+node_modules/
+.yarn.installed

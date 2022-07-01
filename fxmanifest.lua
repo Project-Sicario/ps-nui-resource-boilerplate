@@ -6,14 +6,12 @@ author "Rory Pearson (Mezmerizxd)"
 url "https://github.com/Project-Sicario/ps-nui-resource-boilerplate"
 
 lua54 'yes'
-games { "rdr3", "gta5" }
+game "rdr3"
 
 ui_page 'build/index.html'
 
-dependency 'yarn'
-
-client_script 'scripts/client/*.client.js'
-server_script 'scripts/server/*.server.js'
+client_script 'dist/client/*.client.js'
+server_script 'dist/server/*.server.js'
 
 files {
   'build/index.html',

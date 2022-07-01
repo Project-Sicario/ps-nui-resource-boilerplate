@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const RemovePlugin = require('remove-files-webpack-plugin');
 
-const buildPath = path.resolve(__dirname, 'scripts');
+const buildPath = path.resolve(__dirname, 'dist');
 
 const server = {
   entry: './src/server/server.ts',

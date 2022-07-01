@@ -1,10 +1,8 @@
-on('ps-nui', data => {
-  SetNuiFocus(data.toggle, data.toggle);
-  SendNuiMessage(
-    JSON.stringify({
-      action: data.nui,
-      toggle: data.toggle,
-      data: data.data,
-    }),
-  );
-});
+on("ps-nui", (nui, toggle) => {
+  SetNuiFocus(toggle, toggle);
+  SendNuiMessage(JSON.stringify({action: nui, data: toggle}));
+})
+
+setTimeout(() => {
+  emit("ps-nui", "nui-test", true);
+}, 3000);
