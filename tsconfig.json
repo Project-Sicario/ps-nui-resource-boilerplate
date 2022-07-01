@@ -1,31 +1,37 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "module": "esnext",
     "lib": [
       "dom",
-      "dom.iterable",
-      "esnext"
+      "es2015",
+      "es2016",
+      "es2017"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "outDir": "./dist",
     "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noEmit": true
   },
   "include": [
-    "src"
-, "webpack.config.js"  ],
+    "src",
+    "webpack.config.js"
+  ],
   "exclude": [
     "src/client",
     "src/server",
-    "src/shared",
+    "src/shared"
   ]
 }
